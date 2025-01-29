@@ -1,0 +1,27 @@
+name: Update URLs
+
+on:
+  push:
+    paths:
+      - '~/.public_dns_tool/urls.json'
+  schedule:
+    - cron: '*/30 * * * *'  # Run every 30 minutes
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Copy URLs file
+        run: |
+          cp ~/.public_dns_tool/urls.json static/urls.json || echo "[]" > static/urls.json
+      
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add static/urls.json
+          git commit -m "Update URLs file" || exit 0
+          git push 
