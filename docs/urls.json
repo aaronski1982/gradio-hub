@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "name": "Test Project",
+    "url": "https://21854415da5d68a619.gradio.live",
+    "description": "My first Gradio experiment",
+    "last_checked": null,
+    "is_alive": null,
+    "added_date": "2025-01-28T16:38:14.954284"
+  }
+]
