@@ -1,10 +1,18 @@
 [
   {
-    "name": "Test Project",
-    "url": "https://21854415da5d68a619.gradio.live",
-    "description": "My first Gradio experiment",
+    "name": "Janus Pro Demo",
+    "url": "https://huggingface.co/spaces/deepseek-ai/Janus-Pro-7B",
+    "description": "A powerful multimodal AI model for image generation and understanding",
     "last_checked": null,
     "is_alive": null,
-    "added_date": "2025-01-28T16:38:14.954284"
+    "added_date": "2025-01-28T16:47:19.534286"
+  },
+  {
+    "name": "D&D Scene Generator",
+    "url": "https://21854415da5d68a619.gradio.live",
+    "description": "AI-powered D&D scene generator and narrator using ChatGPT and Kokoro TTS",
+    "last_checked": null,
+    "is_alive": null,
+    "added_date": "2025-01-28T16:47:19.579024"
   }
 ]
